@@ -1,5 +1,4 @@
 class Trip
-
   attr_reader :customer, :vehicle
 
   def initialize(args={})
@@ -24,7 +23,6 @@ class Trip
 end
 
 class Mechanic
-
   attr_reader :bicycle
 
   def initialize(args={})
@@ -74,7 +72,7 @@ tr = Trip.new({
   :customer => "Mike Barry"
 })
 tr.prepare([Mechanic.new, TripCoordinator.new, Driver.new])
-puts tr
+puts tr.inspect
 
 
 tr2 = Trip.new({
@@ -82,4 +80,4 @@ tr2 = Trip.new({
 })
 tr2.prepare([Mechanic.new({:bicycle => "Large Mountain Fat Wheel"}), TripCoordinator.new, Driver.new])
 
-puts tr2
+puts tr2.inspect
