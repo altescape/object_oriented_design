@@ -1,6 +1,6 @@
 class Food
   def type
-    raise NotImplementedError, 'Ask the subclass'
+    raise NotImplementedError, 'abstract method access not allowed'
   end
 end
 
