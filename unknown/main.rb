@@ -17,10 +17,10 @@ one_type = OneType.new(data_format_one)
 puts one_type.inspect
 
 likes_increase = DifferenceCalculation.new(one_type)
-puts "Total likes increase: #{likes_increase.calculation.inspect}"
+puts "Total likes increase: #{likes_increase.calculation}"
 
 likes_total = TotalCalculation.new(one_type)
-puts "Total likes: #{likes_total.calculation.inspect}"
+puts "Total likes: #{likes_total.calculation}"
 
 puts "==============================="
 
@@ -66,4 +66,4 @@ two_type = TwoType.new(data_format_two)
 puts two_type.inspect
 
 hash_difference = HashDifferenceCalculation.new(two_type)
-puts "Hash difference: #{hash_difference.calculation.inspect}"
+puts "Hash difference: #{hash_difference.calculation}"

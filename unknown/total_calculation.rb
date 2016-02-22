@@ -1,5 +1,5 @@
 class TotalCalculation < Calculation
   def calculation
-    @last
+    last
   end
 end

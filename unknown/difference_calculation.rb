@@ -1,5 +1,5 @@
 class DifferenceCalculation < Calculation
   def calculation
-    @last - @first
+    last - first
   end
 end
