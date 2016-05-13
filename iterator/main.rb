@@ -1,10 +1,10 @@
 def foo(word)
-  shite = "farts"
-  yield "#{word} and a #{shite}"
+  secondary_word = "things..."
+  yield "#{word} and a #{secondary_word}"
 end
 
 def bar 
   "fang"
 end
 
-foo("mong") { |a| puts a }
+foo("Doc") { |a| puts a }
